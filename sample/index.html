@@ -26,15 +26,20 @@
 	<p>You can use this sample to validate whether your <a href="https://ckeditor5.github.io/docs/nightly/ckeditor5/latest/builds/guides/development/custom-builds.html">custom build</a> works fine.</p>
 </div>
 
-<script src="../build/ckeditor.js"></script>
+<script src="../build/abbozzaEditor.js"></script>
 <script>
-	ClassicEditor.create( document.querySelector( '#editor' ) )
+	AbbozzaEditor.create( document.querySelector( '#editor' ) )
 		.then( editor => {
 			window.editor = editor;
 		} )
 		.catch( err => {
 			console.error( err.stack );
 		} );
+
+</script>
+
+<script>
+console.log(Array.from( editor.ui.componentFactory.names() ));
 </script>
 
 </body>
