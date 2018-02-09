@@ -13,6 +13,6 @@ const buildConfig = require( '../build-config' );
 
 console.log( 'Creating the entry file...' );
 
-bundler.createEntryFile( path.join( 'src', 'ckeditor.js' ), buildConfig );
+bundler.createEntryFile( path.join( 'src', 'abbozzaEditor.js' ), buildConfig );
 
 console.log( 'Done.' );
