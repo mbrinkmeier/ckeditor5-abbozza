@@ -10,7 +10,7 @@ module.exports = {
 	editor: '@ckeditor/ckeditor5-editor-classic/src/classiceditor',
 
 	// The name under which the editor will be exported.
-	moduleName: 'ClassicEditor',
+	moduleName: 'AbbozzaEditor',
 
 	// Plugins to include in the build.
 	plugins: [
@@ -31,6 +31,7 @@ module.exports = {
 		'@ckeditor/ckeditor5-list/src/list',
 		'@ckeditor/ckeditor5-paragraph/src/paragraph',
 		'@ckeditor/ckeditor5-upload/src/imageupload',
+		'../plugin/abbozza'
 	],
 
 	// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
@@ -44,11 +45,13 @@ module.exports = {
 				'bold',
 				'italic',
 				'link',
+				'insertimage',
 				'bulletedList',
 				'numberedList',
 				'blockQuote',
 				'undo',
-				'redo'
+				'redo',
+				'insertpage'
 			]
 		},
 

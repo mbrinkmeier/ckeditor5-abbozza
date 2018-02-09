@@ -17,11 +17,11 @@ const buildConfig = require( './build-config' );
 module.exports = {
 	devtool: 'source-map',
 
-	entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
+	entry: path.resolve( __dirname, 'src', 'abbozzaEditor.js' ),
 
 	output: {
 		path: path.resolve( __dirname, 'build' ),
-		filename: 'ckeditor.js',
+		filename: 'abbozzaEditor.js',
 		libraryTarget: 'umd',
 		libraryExport: 'default',
 		library: buildConfig.moduleName
